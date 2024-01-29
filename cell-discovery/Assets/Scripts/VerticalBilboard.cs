@@ -18,4 +18,9 @@ public class VerticalBilboard : MonoBehaviour
     {
         transform.LookAt(target, Vector3.up);
     }
+
+    public void set_target(Transform target)
+    { 
+        this.target = target;
+    }
 }
