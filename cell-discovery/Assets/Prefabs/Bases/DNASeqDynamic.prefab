@@ -73,7 +73,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d98088395a8d717419b457bdb5bc3e46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hook: {fileID: 8725072799596072138}
+  hook: {fileID: 7375620999562943964}
 --- !u!1 &7375620999562943964
 GameObject:
   m_ObjectHideFlags: 0
@@ -133,7 +133,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -144,7 +144,7 @@ HingeJoint:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7375620999562943964}
-  m_ConnectedBody: {fileID: 0}
+  m_ConnectedBody: {fileID: 6793362934877600843}
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 1, z: 1}

@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using static Unity.Burst.Intrinsics.X86.Avx;
 
 public class RNA_polymerase_script : MonoBehaviour
 {
 
-    public GameObject DNASeq;
+    public GameObject RNASeq;
 
     public GameObject adenosine;
     public GameObject uridine;
@@ -16,19 +17,17 @@ public class RNA_polymerase_script : MonoBehaviour
     public GameObject[] prefabDNA_Segs;
 
     public Transform newBaseSpawn;
+    public Transform actualBasePos;
 
     private string actualBaseType;
+    private GameObject newBase;
 
     // Start is called before the first frame update
     void Start()
     {
-        int index = UnityEngine.Random.Range(0, prefabDNA_Segs.Length);
-        GameObject newSeg = Instantiate(prefabDNA_Segs[index]);
-        newSeg.transform.parent = transform;
-        newSeg.transform.position = newBaseSpawn.position;
-        //newSeg.transform.rotation = newBaseSpawn.rotation;
-
-        this.setCompActualBase(newSeg);
+        addNewBase();
+        setCompActualBase(newBase);
+        addNewBase();
     }
 
     // Update is called once per frame
@@ -37,8 +36,21 @@ public class RNA_polymerase_script : MonoBehaviour
         
     }
 
+    void addNewBase()
+    {
+        int index = UnityEngine.Random.Range(0, prefabDNA_Segs.Length);
+        newBase = Instantiate(prefabDNA_Segs[index]);
+        newBase.transform.parent = transform;
+        newBase.transform.position = newBaseSpawn.position;
+        newBase.transform.rotation = new Quaternion(0, 0, 90, 0);
+    }
+
     public void setCompActualBase(GameObject actualBase)
     {
+        actualBase.transform.parent = transform;
+        actualBase.transform.position = actualBasePos.position;
+        actualBase.transform.rotation = new Quaternion(0, 0, 90, 0);
+
         Base_Info baseComp = actualBase.GetComponent<Base_Info>();
         string comp = baseComp.getBaseType().ToString();
 
@@ -67,7 +79,27 @@ public class RNA_polymerase_script : MonoBehaviour
 
         if (actualBaseType == baseType)
         {
-            DNASeq.GetComponent<DNA_Seq_Dynamic>().addBase(newRNABAase.GameObject());
+            RNASeq.GetComponent<DNA_Seq_Dynamic>().addBase(newRNABAase.GameObject());
+
+            setCompActualBase(newBase);
+            addNewBase();
+
+            //switch (baseType)
+            //{
+            //    case "A":
+            //        RNASeq.GetComponent<DNA_Seq_Dynamic>().addBase(adenosine);
+            //        break;
+            //    case "G":
+            //        RNASeq.GetComponent<DNA_Seq_Dynamic>().addBase(guanosine);
+            //        break;
+            //    case "C":
+            //        RNASeq.GetComponent<DNA_Seq_Dynamic>().addBase(cytosine);
+            //        break;
+            //    case "U":
+            //        RNASeq.GetComponent<DNA_Seq_Dynamic>().addBase(uridine);
+            //        break;
+
+            //}
         }
 
     }

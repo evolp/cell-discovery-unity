@@ -28,7 +28,10 @@ public class BaseCompare : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        adenosineHover.SetActive(false);
+        uridineHover.SetActive(false);
+        guanosineHover.SetActive(false);
+        cytosineHover.SetActive(false);
     }
 
     // Update is called once per frame
@@ -48,23 +51,28 @@ public class BaseCompare : MonoBehaviour
             switch (baseName)
             {
                 case "A":
-                    hoverBase = Instantiate(adenosineHover);
+                    //hoverBase = Instantiate(adenosineHover);
+                    adenosineHover.SetActive(true);
                     rnaBase = adenosine;
                     break;
                 case "U":
-                    hoverBase = Instantiate(uridineHover);
+                    //hoverBase = Instantiate(uridineHover);
+                    uridineHover.SetActive(true);
                     rnaBase = uridine;
                     break;
                 case "G":
-                    hoverBase = Instantiate(guanosineHover);
+                    //hoverBase = Instantiate(guanosineHover);
+                    guanosineHover.SetActive(true);
                     rnaBase = guanosine;
                     break;
                 case "C":
-                    hoverBase = Instantiate(cytosineHover);
+                    //hoverBase = Instantiate(cytosineHover);
+                    cytosineHover.SetActive(true);
                     rnaBase = cytosine;
                     break;
             }
-            hoverBase.transform.position = hoverBasePos.transform.position;
+            //hoverBase.transform.position = hoverBasePos.transform.position;
+            //hoverBase.transform.rotation = new Quaternion(180, 90, 90, 0);
         }
     }
 
@@ -87,7 +95,12 @@ public class BaseCompare : MonoBehaviour
                 RNARoot.GetComponent<RNA_polymerase_script>().compareComplement(baseType, cytosine);
                 break;
         }
-        
+
+        adenosineHover.SetActive(false);
+        uridineHover.SetActive(false);
+        guanosineHover.SetActive(false);
+        cytosineHover.SetActive(false);
+
         Destroy(hoverBase);
     }
 
