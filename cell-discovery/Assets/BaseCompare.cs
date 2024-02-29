@@ -42,9 +42,10 @@ public class BaseCompare : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        bool notIgnored = other.GetComponent<Base_Info>().destroyable;
         Base_Info baseInfo = other.GetComponent<Base_Info>();
 
-        if (baseInfo != null)
+        if (notIgnored == false)
         {
             string baseName = baseInfo.getBaseType().ToString();
             
