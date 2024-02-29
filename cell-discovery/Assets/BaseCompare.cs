@@ -14,6 +14,7 @@ public class BaseCompare : MonoBehaviour
     public GameObject uridineHover;
     public GameObject guanosineHover;
     public GameObject cytosineHover;
+    public GameObject thymineHover;
     public GameObject hoverBasePos;
     private GameObject hoverBase;
 
@@ -70,6 +71,11 @@ public class BaseCompare : MonoBehaviour
                     //hoverBase = Instantiate(cytosineHover);
                     cytosineHover.SetActive(true);
                     rnaBase = cytosine;
+                    break;
+                case "T":
+                    //hoverBase = Instantiate(cytosineHover);
+                    thymineHover.SetActive(true);
+
                     break;
             }
             //hoverBase.transform.position = hoverBasePos.transform.position;
