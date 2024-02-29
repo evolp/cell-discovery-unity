@@ -2344,7 +2344,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2103045366470068645, guid: e8b3cc702118b7542a1758ad9939eeea, type: 3}
       propertyPath: basetype
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2103045366470068645, guid: e8b3cc702118b7542a1758ad9939eeea, type: 3}
       propertyPath: resetPosition
@@ -2533,7 +2533,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2664110740637022839, guid: 832fbff5bd1ef6a449e303bce8b4aa15, type: 3}
       propertyPath: basetype
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2664110740637022839, guid: 832fbff5bd1ef6a449e303bce8b4aa15, type: 3}
       propertyPath: resetPosition
@@ -2838,7 +2838,7 @@ PrefabInstance:
       objectReference: {fileID: 610250801}
     - target: {fileID: 8496046649224649799, guid: e93d98fddd3b2e14c9b8ab6c84c3c9b0, type: 3}
       propertyPath: basetype
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8496046649224649799, guid: e93d98fddd3b2e14c9b8ab6c84c3c9b0, type: 3}
       propertyPath: resetPosition
@@ -2985,7 +2985,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3510141932141258485, guid: 8e8109756ca2f364dabcaab966035f23, type: 3}
       propertyPath: basetype
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3510141932141258485, guid: 8e8109756ca2f364dabcaab966035f23, type: 3}
       propertyPath: resetPosition
