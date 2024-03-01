@@ -108,6 +108,7 @@ public class BaseCompare : MonoBehaviour
         uridineHover.SetActive(false);
         guanosineHover.SetActive(false);
         cytosineHover.SetActive(false);
+        thymineHover.SetActive(false);
 
         Destroy(hoverBase);
     }
