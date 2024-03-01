@@ -233,6 +233,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1344292209012331292}
     m_Modifications:
+    - target: {fileID: 602818589327228935, guid: 6e679108734b003499c51fe02184fd35, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5335898373502568758, guid: 6e679108734b003499c51fe02184fd35, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -316,6 +320,10 @@ PrefabInstance:
     - target: {fileID: 5525966578369532544, guid: 6e679108734b003499c51fe02184fd35, type: 3}
       propertyPath: m_Name
       value: Right Mini Menu
+      objectReference: {fileID: 0}
+    - target: {fileID: 5972743259002569892, guid: 6e679108734b003499c51fe02184fd35, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
