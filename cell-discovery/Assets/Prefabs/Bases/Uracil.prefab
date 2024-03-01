@@ -66,7 +66,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ed41be1dff156fb48a31915499e661b2, type: 3}
       propertyPath: m_Name
-      value: uracil
+      value: Uracil
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -78,6 +78,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ed41be1dff156fb48a31915499e661b2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 213631868428918618}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ed41be1dff156fb48a31915499e661b2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9076470852905458183}
   m_SourcePrefab: {fileID: 100100000, guid: ed41be1dff156fb48a31915499e661b2, type: 3}
 --- !u!1 &4845983539356192948 stripped
 GameObject:
@@ -124,3 +127,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   basetype: 4
+  destroyable: 1
+  resetPosition: {fileID: 0}
+--- !u!65 &9076470852905458183
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4845983539356192948}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.083333336, y: 0.5000001, z: 0.083333425}
+  m_Center: {x: 0, y: 0.008313492, z: 0}

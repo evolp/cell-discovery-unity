@@ -6,6 +6,10 @@ public class Base_Info : MonoBehaviour
 {
     public BaseType basetype;
 
+    public bool destroyable;
+
+    public Transform resetPosition;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +20,17 @@ public class Base_Info : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void ResetPosition()
+    {
+        transform.position = resetPosition.position;
+        transform.rotation = resetPosition.rotation;
+    }
+
+    public void ChangePosition(Vector3 Position)
+    {
+        transform.position += Position;
     }
 
     public BaseType getBaseType()
