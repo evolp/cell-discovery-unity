@@ -14,6 +14,7 @@ public class BaseCompare : MonoBehaviour
     public GameObject uridineHover;
     public GameObject guanosineHover;
     public GameObject cytosineHover;
+    public GameObject thymineHover;
     public GameObject hoverBasePos;
     private GameObject hoverBase;
 
@@ -32,6 +33,7 @@ public class BaseCompare : MonoBehaviour
         uridineHover.SetActive(false);
         guanosineHover.SetActive(false);
         cytosineHover.SetActive(false);
+        thymineHover.SetActive(false);
     }
 
     // Update is called once per frame
@@ -42,9 +44,10 @@ public class BaseCompare : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        bool notIgnored = other.GetComponent<Base_Info>().destroyable;
         Base_Info baseInfo = other.GetComponent<Base_Info>();
 
-        if (baseInfo != null)
+        if (notIgnored == false)
         {
             string baseName = baseInfo.getBaseType().ToString();
             
@@ -69,6 +72,11 @@ public class BaseCompare : MonoBehaviour
                     //hoverBase = Instantiate(cytosineHover);
                     cytosineHover.SetActive(true);
                     rnaBase = cytosine;
+                    break;
+                case "T":
+                    //hoverBase = Instantiate(cytosineHover);
+                    thymineHover.SetActive(true);
+
                     break;
             }
             //hoverBase.transform.position = hoverBasePos.transform.position;

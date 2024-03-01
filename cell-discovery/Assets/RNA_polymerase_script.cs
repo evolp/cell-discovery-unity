@@ -65,7 +65,10 @@ public class RNA_polymerase_script : MonoBehaviour
             case "C":
                 actualBaseType = "G";
                 break;
-            case "U":
+            //case "U":
+            //    actualBaseType = "A";
+            //    break;
+            case "T":
                 actualBaseType = "A";
                 break;
 
@@ -73,14 +76,19 @@ public class RNA_polymerase_script : MonoBehaviour
     }
 
     public void compareComplement(string baseType, GameObject newRNABAase)
-    {
-        print(baseType);
-        print(actualBaseType); print(newRNABAase);
-
+    { 
         if (actualBaseType == baseType)
         {
             RNASeq.GetComponent<DNA_Seq_Dynamic>().addBase(newRNABAase.GameObject());
 
+            int childrenCount = transform.childCount;
+            for (int i = 0; i < childrenCount; i++)
+            { 
+                if (transform.GetChild(i).GetComponent<Base_Info>() != null)
+                {
+                    transform.GetChild(i).GetComponent<Base_Info>().ChangePosition(new Vector3(0, 0, (float)0.3));
+                }
+            }
             setCompActualBase(newBase);
             addNewBase();
 

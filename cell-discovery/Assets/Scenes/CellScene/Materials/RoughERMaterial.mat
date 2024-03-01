@@ -41,4 +41,5 @@ Material:
     m_Floats: []
     m_Colors:
     - _BaseColor: {r: 0.36320752, g: 0.6493796, b: 1, a: 1}
+    - _EdgeHighlightColor: {r: 0.5246529, g: 0.8490566, b: 0.6467389, a: 0}
   m_BuildTextureStacks: []

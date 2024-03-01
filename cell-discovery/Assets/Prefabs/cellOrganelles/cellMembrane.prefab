@@ -72,6 +72,14 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 494847810371498591, guid: 1fdaa46da114481479a1b1e053074081, type: 3}
+    - target: {fileID: 5961326130014312255, guid: 1227e95704ea825448ee5c647908b222, type: 3}
+      propertyPath: MaxDistance
+      value: 128.52492
+      objectReference: {fileID: 0}
+    - target: {fileID: 5961326130014312255, guid: 1227e95704ea825448ee5c647908b222, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6f133aefdddd3e44788a13fc644a3b07, type: 3}
     - target: {fileID: 6628779903637449490, guid: 1227e95704ea825448ee5c647908b222, type: 3}
       propertyPath: m_Mesh
       value: 
