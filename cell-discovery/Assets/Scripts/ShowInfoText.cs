@@ -9,6 +9,8 @@ public class ShowInfoText : MonoBehaviour
 
     public GameObject menu;
 
+    public TMP_Text testobj;
+
     public string text;
 
     // Start is called before the first frame update
@@ -23,12 +25,10 @@ public class ShowInfoText : MonoBehaviour
         
     }
 
-    public void SetText() {
-        //TMP_Text testobj = menu.Find("TMP_Text");
-        //Assets\Scripts\ShowInfoText.cs(27,28): error CS0176: Member 'GameObject.Find(string)' cannot be accessed with an instance reference; qualify it with a type name instead
-
-
-        //testobj.text = text;
+    // Set the info text
+    public void SetText() 
+    {
+        testobj.text = text;
         menu.SetActive(true);
     }
 
