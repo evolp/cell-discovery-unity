@@ -145,7 +145,7 @@ PrefabInstance:
       objectReference: {fileID: -7698980610064103401, guid: 9701d01013acd70449359273916a7b59, type: 3}
     - target: {fileID: 5961326130014312255, guid: 1227e95704ea825448ee5c647908b222, type: 3}
       propertyPath: MinDistance
-      value: 0.95962775
+      value: 1.3896444
       objectReference: {fileID: 0}
     - target: {fileID: 6628779903637449490, guid: 1227e95704ea825448ee5c647908b222, type: 3}
       propertyPath: m_Mesh

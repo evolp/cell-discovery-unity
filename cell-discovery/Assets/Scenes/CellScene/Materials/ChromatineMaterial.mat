@@ -39,5 +39,7 @@ Material:
     m_TexEnvs: []
     m_Ints: []
     m_Floats: []
-    m_Colors: []
+    m_Colors:
+    - _BaseColor: {r: 0, g: 0.22399688, b: 1, a: 1}
+    - _EdgeHighlightColor: {r: 0.9811321, g: 0.08791304, b: 0.0046279924, a: 0}
   m_BuildTextureStacks: []

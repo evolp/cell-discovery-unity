@@ -72,6 +72,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+    - target: {fileID: 5961326130014312255, guid: 1227e95704ea825448ee5c647908b222, type: 3}
+      propertyPath: MinDistance
+      value: 7.021503
+      objectReference: {fileID: 0}
     - target: {fileID: 6628779903637449490, guid: 1227e95704ea825448ee5c647908b222, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -179,7 +183,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 2
+      scalar: 5
       minScalar: 5
       maxCurve:
         serializedVersion: 2

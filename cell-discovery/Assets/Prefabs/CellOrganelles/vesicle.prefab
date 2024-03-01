@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &6688751421953107423
+--- !u!1001 &443912710976714788
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,23 +10,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 582918685502760197, guid: 1227e95704ea825448ee5c647908b222, type: 3}
       propertyPath: m_Name
-      value: cellMembrane
+      value: vesicle
       objectReference: {fileID: 0}
     - target: {fileID: 1164786850175799769, guid: 1227e95704ea825448ee5c647908b222, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: be934ecf1fad62a41ad049651e92ef05, type: 2}
+      objectReference: {fileID: 2100000, guid: b7da0f7b54029d149ab91ee75a9522c7, type: 2}
     - target: {fileID: 4489429861617800982, guid: 1227e95704ea825448ee5c647908b222, type: 3}
       propertyPath: m_LocalScale.x
-      value: 100
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4489429861617800982, guid: 1227e95704ea825448ee5c647908b222, type: 3}
       propertyPath: m_LocalScale.y
-      value: 100
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4489429861617800982, guid: 1227e95704ea825448ee5c647908b222, type: 3}
       propertyPath: m_LocalScale.z
-      value: 100
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4489429861617800982, guid: 1227e95704ea825448ee5c647908b222, type: 3}
       propertyPath: m_LocalPosition.x
@@ -71,15 +71,15 @@ PrefabInstance:
     - target: {fileID: 4834242647848496416, guid: 1227e95704ea825448ee5c647908b222, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 494847810371498591, guid: 1fdaa46da114481479a1b1e053074081, type: 3}
+      objectReference: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
     - target: {fileID: 5961326130014312255, guid: 1227e95704ea825448ee5c647908b222, type: 3}
-      propertyPath: MaxDistance
-      value: 128.52492
+      propertyPath: MinDistance
+      value: 1.9309418
       objectReference: {fileID: 0}
     - target: {fileID: 6628779903637449490, guid: 1227e95704ea825448ee5c647908b222, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 494847810371498591, guid: 1fdaa46da114481479a1b1e053074081, type: 3}
+      objectReference: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
     - target: {fileID: 6628779903637449490, guid: 1227e95704ea825448ee5c647908b222, type: 3}
       propertyPath: m_Convex
       value: 0

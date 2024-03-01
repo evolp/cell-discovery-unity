@@ -200,6 +200,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: -4458728646798135706, guid: cfa5a92f08677104b99e0b22849e39c3, type: 3}
+    - target: {fileID: 5961326130014312255, guid: 1227e95704ea825448ee5c647908b222, type: 3}
+      propertyPath: MinDistance
+      value: 12.1552925
+      objectReference: {fileID: 0}
     - target: {fileID: 6628779903637449490, guid: 1227e95704ea825448ee5c647908b222, type: 3}
       propertyPath: m_Mesh
       value: 
